@@ -97,7 +97,7 @@ var students = [
 ];
 
 var passingStudents = students.find(function(student){
-	return student.average > 50;
+	return student.average > 60;
 });
 
 passingStudents === [
@@ -117,7 +117,7 @@ var students = [
 	{firstName: 'Greg', lastName: 'Olsen'}
 ]
 
-var fullNames = students(function(student){
+var fullNames = students.map(function(student){
 	return student.firstName + ' ' + student.lastName;
 })
 
